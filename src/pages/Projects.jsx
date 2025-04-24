@@ -1,21 +1,23 @@
 import React from 'react';
-import weatherAppImage from 'weather-app-image.png';
 import movieAppImage from '../assets/movie-search-app-image.png';
+import weatherAppImage from '../assets/weather-app-image.png';
 
 const projects = [
   {
     id: 1,
-    image: 'movieAppImage',
+    image: movieAppImage,
     name: 'Movie Search App',
     technologies: 'React | Tailwind CSS | Vite',
     description: 'A Movie Search Application made with OMDb API. Fetch API for HTTP requests. Made with React, Tailwind CSS, and Vite.',
+    url: 'https://movie-search-app-michael-orzel.netlify.app/',
   },
   {
     id: 2,
-    image: 'weatherAppImage',
+    image: weatherAppImage,
     name: 'Weather App',
     technologies: 'React | Tailwind CSS | Vite',
     description: 'A Weather Application made with Open Weather Map API. Fetch API for HTTP requests. Made with React, Tailwind CSS, and Vite.',
+    url: 'https://weather-app-michael-orzel.netlify.app/',
   },
 ];
 
@@ -37,16 +39,30 @@ const Projects = () => {
                   className="w-full h-48 object-cover transition duration-300 group-hover:blur-sm"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                  <span className="text-white text-lg font-semibold">View</span>
+                  <span className="text-white text-lg font-semibold">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white text-lg font-semibold"
+                    >
+                      View
+                    </a>
+                  </span>
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
                 <p className="text-gray-600 mb-2">{project.technologies}</p>
                 <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
-                <button className="mt-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-center mt-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                >
                   View
-                </button>
+                </a>
               </div>
             </div>
           ))}

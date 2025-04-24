@@ -38,7 +38,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
               >
-                Message
+                Message on Linkedin
               </a>
             </div>
           </div>

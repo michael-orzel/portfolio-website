@@ -23,14 +23,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12">
+    <div className="bg-[#333333] min-h-screen py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="text-white text-3xl font-bold text-center mb-12">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+              className="bg-[#FAFAFA] rounded-lg shadow-lg overflow-hidden flex flex-col"
             >
               <div className="relative group">
                 <img
@@ -53,13 +53,13 @@ const Projects = () => {
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-600 mb-2">{project.technologies}</p>
-                <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
+                <p className="text-[#2E2E2E] mb-2">{project.technologies}</p>
+                <p className="text-[#1A1A1A] mb-4 flex-grow">{project.description}</p>
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-center mt-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                  className="bg-[#333333] hover:bg-[#2a2a2a] text-[#FAFAFA] text-center mt-auto px-4 py-2 rounded transition"
                 >
                   View
                 </a>

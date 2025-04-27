@@ -26,7 +26,7 @@ const Home = () => {
             </h1>
             
             {/* Subheading */}
-            <p className="text-xl md:text-2xl mb-8 opacity-90">
+            <p className="text-[#FCFCFC] text-xl md:text-2xl mb-8 opacity-90">
               React.js | TypeScript | Tailwind CSS
             </p>
             
@@ -36,7 +36,7 @@ const Home = () => {
                 href="https://www.linkedin.com/in/michael-d-orzel"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+                className="bg-[#FAFBFC] hover:bg-[#FEFFFF] text-[#333333] font-semibold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
               >
                 Message on Linkedin
               </a>

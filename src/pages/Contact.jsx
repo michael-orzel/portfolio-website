@@ -31,9 +31,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+        <h2 className="text-white mt-6 text-center text-3xl font-extrabold text-gray-900">
           Contact
         </h2>
         <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-6">
@@ -51,7 +51,7 @@ const Contact = () => {
                 placeholder="Your Name"
               />
               {errors.name && (
-                <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
+                <p className="mt-1 text-sm text-[#FFF8F8]">{errors.name.message}</p>
               )}
             </div>
             {/* Email Input */}
@@ -73,7 +73,7 @@ const Contact = () => {
                 placeholder="Your Email"
               />
               {errors.email && (
-                <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+                <p className="mt-1 text-sm text-[#FFF8F8]">{errors.email.message}</p>
               )}
             </div>
             {/* Message Input */}
@@ -89,7 +89,7 @@ const Contact = () => {
                 placeholder="Your Message"
               />
               {errors.message && (
-                <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
+                <p className="mt-1 text-sm text-[#FFF8F8]">{errors.message.message}</p>
               )}
             </div>
           </div>
@@ -98,7 +98,7 @@ const Contact = () => {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="text-[#333333] bg-[#FAFBFC] hover:bg-[#FEFFFF] group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Send Message
             </button>
@@ -108,7 +108,7 @@ const Contact = () => {
           {status && (
             <p
               className={`text-center text-sm ${
-                status.includes("Failed") ? "text-red-600" : "text-green-600"
+                status.includes("Failed") ? "text-[#FFF8F8]" : "text-[#F8FCF8]"
               }`}
             >
               {status}

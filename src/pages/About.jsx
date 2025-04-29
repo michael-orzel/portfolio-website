@@ -21,15 +21,15 @@ import michaelImage from '../assets/michael-orzel-image.jpg';
 
 const About = () => {
   return (
-    <section className="min-h-screen text-white flex items-center justify-center py-12">
+    <section className="min-h-screen text-white flex items-center justify-center px-8 py-12">
       <div className="container mx-auto px-4">
         {/* Heading */}
-        <h2 className="text-4xl font-bold mb-8">About</h2>
+        <h2 className="text-4xl font-bold text-center pt-8 mb-8 lg:pb-6">About</h2>
 
         {/* Text and Image Layout */}
-        <div className="flex flex-col md:flex-row gap-8 mb-12">
+        <div className="flex flex-col md:flex-row gap-8 mb-20">
           {/* Text */}
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 justify-center">
             <p className="mb-4">
               This About page is for <span class="italic">Michael Orzel</span>. Michael is a <span class="italic">Frontend Web Developer</span> who creates responsive web applications using <span class="italic">React, TypeScript, and Tailwind CSS</span>. He focuses on <span class="italic">Mobile-First Design</span> that fits phone screen sizes well.
             </p>
@@ -42,7 +42,7 @@ const About = () => {
           </div>
 
           {/* Image */}
-          <div className="md:w-1/2 flex justify-center md:justify-end">
+          <div className="md:w-1/2 flex justify-center">
             <img
               src={michaelImage}
               alt="Michael Orzel Image"
@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         {/* Skills Grid */}
-        <h3 className="text-3xl font-bold mb-8">Skills</h3>
+        <h3 className="text-3xl font-bold text-center mb-8 lg:pb-6">Skills</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* React */}
           <div className="flex items-center p-4 bg-[#262626] rounded-lg">

@@ -5,6 +5,14 @@ import weatherAppImage from '../assets/weather-app-image.png';
 const projects = [
   {
     id: 1,
+    image: ecommerceImage,
+    name: 'Ecommerce Product Page',
+    technologies: 'React | Tailwind CSS | Vite',
+    description: 'An Ecommerce Product Page with cart functionality using Fake Store API. Context API for global state management. Fetch API for HTTP requests. React Router for web page navigation. Made with React, Tailwind CSS, and Vite.',
+    url: 'https://ecommerce-product-page-michael-orzel.netlify.app/',
+  },
+  {
+    id: 2,
     image: movieAppImage,
     name: 'Movie Search App',
     technologies: 'React | Tailwind CSS | Vite',
@@ -12,7 +20,7 @@ const projects = [
     url: 'https://movie-search-app-michael-orzel.netlify.app/',
   },
   {
-    id: 2,
+    id: 3,
     image: weatherAppImage,
     name: 'Weather App',
     technologies: 'React | Tailwind CSS | Vite',

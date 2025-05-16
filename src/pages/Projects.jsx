@@ -5,7 +5,7 @@ import weatherAppImage from '../assets/weather-app-image.png';
 const projects = [
   {
     id: 1,
-    image: ecommerceImage,
+    image: movieAppImage,
     name: 'Ecommerce Product Page',
     technologies: 'React | Tailwind CSS | Vite',
     description: 'An Ecommerce Product Page with cart functionality using Fake Store API. Context API for global state management. Fetch API for HTTP requests. React Router for web page navigation. Made with React, Tailwind CSS, and Vite.',

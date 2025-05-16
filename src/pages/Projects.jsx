@@ -1,4 +1,5 @@
 import React from 'react';
+import ecommerceImage from '../assets/ecommerce-app-image.png';
 import movieAppImage from '../assets/movie-search-app-image.png';
 import weatherAppImage from '../assets/weather-app-image.png';
 
